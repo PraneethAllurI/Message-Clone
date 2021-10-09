@@ -10,11 +10,10 @@ h2{
   position: fixed;
   bottom: 0 ;
   z-index: 1;
-background-color: rgb(223, 217, 217);
-display: flex;
-width: 100%;
-margin:20px;
-overflow: hidden;
+  background-color: rgb(223, 217, 217);
+  display: flex;
+   width: 100%; 
+  overflow: hidden;
 }
 .app__formControl{
   display: flex !important;
@@ -23,9 +22,12 @@ overflow: hidden;
 }
 
 .app__input{
-  flex:1;
-
+   width: 1400px;
 }
-.app__iconButton{
-  flex: 0;
+
+
+@media(max-width:500px) {
+  .app__input{
+    width:300px;
+  }
 }
